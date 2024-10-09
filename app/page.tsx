@@ -76,7 +76,7 @@ export default function Home() {
         {empresasSelecionadas.length > 0 ?
           <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
             {empresasSelecionadas.map((empresa) => (
-              <Link href="https://radiotelles.com/" target="_blank">
+              <Link href={empresa.site_url} target="_blank">
                 <div className="bg-white w-auto rounded cursor-pointer hover:border-4 hover:border-blue-700">
                   <Image  
                     src={empresa.imagem}
